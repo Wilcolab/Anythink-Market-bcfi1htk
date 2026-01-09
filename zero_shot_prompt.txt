@@ -1,0 +1,17 @@
+function toSnakeCase(text) {
+    return text
+        .replace(/([a-z])([A-Z])/g, '$1_$2')
+        .replace(/[\s\-]+/g, '_')
+        .toLowerCase();
+}
+
+module.exports = toSnakeCase;
+
+
+// Write a function called addNumbers that takes two parameters and returns their sum. For example, addNumbers(5, 3) should return 8.
+
+function addNumbers(a, b) {
+    return a + b;
+}
+
+module.exports = addNumbers;
